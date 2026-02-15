@@ -255,7 +255,8 @@ th {
         for (var r = 1; r < rows.length; r++) {
           var allCells = rows[r].getElementsByTagName('td');
           for (var c = 1; c < allCells.length; c++) {
-          allCells[c].style.backgroundColor = "";
+          allCells[c].style.color = "";
+          allCells[c].style.fontWeight = "normal";
       }
     }
 
@@ -268,7 +269,8 @@ th {
             if (currentTime >= timeSlots[i].start && currentTime < timeSlots[i].end) {
               var box = cells[i + 1];
               if (box) {
-              box.style.backgroundColor = "#bbdefb";
+              box.style.color = "blue";
+              box.style.fontWeight = "bold";
               }
 
 
