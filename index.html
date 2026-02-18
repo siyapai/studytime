@@ -18,7 +18,6 @@
 th, td {
     text-align: left;
     padding: 8px;
-    border: 0.8px solid black;
 }
 
 tr:nth-child(even){background-color:#}
@@ -40,9 +39,7 @@ th {
 
 
 
-
-
-    	<tbody><tr>
+    	<tr>
     		<td>&nbsp;&nbsp;</td>
         <td bgcolor="#ffccff">คาบ1<br><font color="#0066ff">8.30-<br>9.20</font></td>
         <td bgcolor="#ffccff">คาบ2<br><font color="#0066ff">9.20-<br>10.10</font></td>
@@ -53,7 +50,6 @@ th {
         <td bgcolor="#ffccff">คาบ7<br><font color="#0066ff">13.30-<br>14.20</font></td>
         <td bgcolor="#ffccff">คาบ8<br><font color="#0066ff">14.20-<br>15.10</font></td>
         <td bgcolor="#ffccff">คาบ9<br><font color="#0066ff">15.10-<br>16.00</font></td>
-        <td bgcolor="#ffccff">คาบ10<br><font color="#0066ff">00.00-<br>00.00</font></td>
     </tr>
 
     <tr>
@@ -85,10 +81,6 @@ th {
     	<td>
     			<br>
     	</td>
-
-      <td>
-          <br>
-      </td>
     </tr>
     <tr>
     	<td bgcolor="pink">อังคาร</td>
@@ -119,10 +111,6 @@ th {
     	<td>
           ชุมนุม<br>
     	</td>
-
-      <td>
-          <br>
-      </td>
     </tr>
     <tr>
     	<td bgcolor="#33cc00">พุธ</td>
@@ -153,10 +141,6 @@ th {
     	<td>
           <br>
     	</td>
-
-      <td>
-          <br>
-      </td>
     </tr>
     <tr>
     	<td bgcolor="#ffcc00">พฤหัส</td>
@@ -187,10 +171,6 @@ th {
     	<td>
     			พ31102<br>อ.ทิวาร์<br>612<br>
     	</td>
-
-      <td>
-          <br>
-      </td>
     </tr>
     <tr>
     	<td bgcolor="#3399ff">ศุกร์</td>
@@ -221,12 +201,17 @@ th {
     	<td>
           ประชุม<br>
     	</td>
-
-      <td>
-          <br>
-      </td>
     </tr>
-    </tbody></table>
+    </table>
+
+    <!-- </form></center>
+     -->
+
+    <br>
+
+
+
+
 
     <script>
       function Check_Time() {
@@ -256,6 +241,8 @@ th {
           for (var c = 1; c < allCells.length; c++) {
           allCells[c].style.color = "";
           allCells[c].style.fontWeight = "normal";
+          allCells[c].style.background = "";
+          allCells[c].style.borderColor = "black";
       }
     }
 
@@ -376,9 +363,9 @@ th {
         subjectData = rows[targetDay].getElementsByTagName('td')[targetCol].innerHTML;
       }
 
-      display.innerHTML = "<span style='color:red; font-size:12pt; '>" + timeText + "</span><br>" +
-                    "<span style='font-size:12pt; color:blue;'>วัน" + dayNames[targetDay] + "</span><br>" +
-                    "<span style='font-size:12pt; color:black;'>" + subjectData + "</span>";
+      display.innerHTML = "<span style='font-size:10pt; color:red;'>" + timeText + "</span><br>" +
+                    "<span style='font-size:10pt; color:blue;'>วัน" + dayNames[targetDay] + "</span><br>" +
+                    "<span style='font-size:10pt; color:black;'>" + subjectData + "</span>";
 }
 
 
@@ -401,9 +388,3 @@ setInterval(Check_Countdown, 1000);
     </script>
   </body>
 </html>
-
-
-
-
-
-
