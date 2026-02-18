@@ -38,7 +38,7 @@ th {
 
 
 
-
+    <tbody>
     	<tr>
     		<td>&nbsp;&nbsp;</td>
         <td bgcolor="#ffccff">คาบ1<br><font color="#0066ff">8.30-<br>9.20</font></td>
@@ -202,8 +202,8 @@ th {
           ประชุม<br>
     	</td>
     </tr>
+  </tbody>
     </table>
-
     <!-- </form></center>
      -->
 
@@ -363,9 +363,9 @@ th {
         subjectData = rows[targetDay].getElementsByTagName('td')[targetCol].innerHTML;
       }
 
-      display.innerHTML = "<span style='font-size:10pt; color:red;'>" + timeText + "</span><br>" +
-                    "<span style='font-size:10pt; color:blue;'>วัน" + dayNames[targetDay] + "</span><br>" +
-                    "<span style='font-size:10pt; color:black;'>" + subjectData + "</span>";
+      display.innerHTML = "<span style='font-size:12pt; color:red;'>" + timeText + "</span><br>" +
+                    "<span style='font-size:12pt; color:blue;'>วัน" + dayNames[targetDay] + "</span><br>" +
+                    "<span style='font-size:12pt; color:black;'>" + subjectData + "</span>";
 }
 
 
